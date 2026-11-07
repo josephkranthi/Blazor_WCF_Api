@@ -1,0 +1,47 @@
+@WebApi_HostAddress = http://localhost:5125
+
+GET {{WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+# Get all employees
+GET {{WebApi_HostAddress}}/api/employee
+Accept: application/json
+
+###
+
+# Get employee by ID
+GET {{WebApi_HostAddress}}/api/employee/1
+Accept: application/json
+
+###
+
+# Create employee
+POST {{WebApi_HostAddress}}/api/employee
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "salary": 50000
+}
+
+###
+
+# Update employee
+PUT {{WebApi_HostAddress}}/api/employee/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Jane Doe",
+  "salary": 55000
+}
+
+###
+
+# Delete employee
+DELETE {{WebApi_HostAddress}}/api/employee/1
+Accept: application/json
+
+###

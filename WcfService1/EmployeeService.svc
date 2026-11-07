@@ -1,0 +1,4 @@
+<%@ ServiceHost Language="C#"
+    Debug="true"
+    Service="WcfService1.EmployeeService"
+    CodeBehind="App_Data\Service\EmployeeService.cs" %>
